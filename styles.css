@@ -1,0 +1,111 @@
+:root {
+  --bg: #faf8f4;
+  --ink: #1d1914;
+  --muted: #857f77;
+  --line: rgba(29, 25, 20, 0.1);
+  --accent: #c4522a;
+  --surface: #ffffff;
+  color-scheme: light;
+}
+
+* { box-sizing: border-box; }
+
+html { background: var(--bg); }
+
+body {
+  margin: 0;
+  color: var(--ink);
+  background: var(--bg);
+  font-family: "Avenir Next", "Segoe UI", sans-serif;
+  font-size: 17px;
+  line-height: 1.55;
+}
+
+a { color: var(--accent); }
+
+.wrap {
+  max-width: 40rem;
+  margin: 0 auto;
+  padding: 2.5rem 1.25rem 4rem;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  margin-bottom: 2.75rem;
+}
+
+.mark {
+  color: var(--ink);
+  font-weight: 700;
+  font-size: 1.35rem;
+  letter-spacing: -0.03em;
+  text-decoration: none;
+}
+
+.langs { display: flex; gap: 0.35rem; }
+
+.langs button {
+  border: 0;
+  background: transparent;
+  color: var(--muted);
+  font: inherit;
+  font-size: 0.82rem;
+  padding: 0.3rem 0.45rem;
+  border-radius: 999px;
+  cursor: pointer;
+}
+
+.langs button[aria-pressed="true"] {
+  color: var(--ink);
+  background: rgba(29, 25, 20, 0.06);
+}
+
+h1 {
+  margin: 0 0 0.6rem;
+  font-size: 2.4rem;
+  line-height: 1.05;
+  letter-spacing: -0.04em;
+}
+
+.lede {
+  margin: 0 0 2rem;
+  color: var(--muted);
+  font-size: 1.05rem;
+}
+
+h2 {
+  margin: 2rem 0 0.45rem;
+  font-size: 1.05rem;
+  letter-spacing: -0.02em;
+}
+
+p { margin: 0.4rem 0 0; }
+
+ul { margin: 0.5rem 0 0; padding-left: 1.15rem; }
+
+li + li { margin-top: 0.35rem; }
+
+.card {
+  margin-top: 1.75rem;
+  padding: 1.1rem 1.15rem;
+  background: var(--surface);
+  border: 1px solid var(--line);
+  border-radius: 16px;
+}
+
+.card p { margin: 0; }
+
+.card a { font-weight: 600; text-decoration: none; }
+
+footer {
+  margin-top: 3rem;
+  padding-top: 1rem;
+  border-top: 1px solid var(--line);
+  color: var(--muted);
+  font-size: 0.92rem;
+}
+
+footer a { color: inherit; }
